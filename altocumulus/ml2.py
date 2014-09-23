@@ -1,0 +1,2 @@
+class CumulusMechanismDriver(object):
+    pass
