@@ -13,6 +13,26 @@ There are two components involved in this project:
 * ML2 mechanism driver (runs on hosts with Neutron server)
 * HTTP API server (runs on switches)
 
+## Installation
+
+### ML2 mechanism driver
+
+1. Install the driver and its dependencies with the following
+
+    pip install git+git://github.com/ianunruh/altocumulus.git
+    pip install requests
+
+2. Add `cumulus` to the `mechanism_drivers` field in `/etc/neutron/neutron.conf`
+3. Configure `/etc/neutron/plugins/ml2/ml2_cumulus.ini`
+
+### HTTP API server
+
+1. Install the API server
+
+    pip install git+git://github.com/ianunruh/altocumulus.git
+
+2. Place the included Upstart script in `/etc/init` and run `start altocumulus-api`
+
 ## To-do
 
 * Authentication
