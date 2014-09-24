@@ -19,8 +19,10 @@ There are two components involved in this project:
 
 1. Install the driver and its dependencies with the following
 
+    ```bash
     pip install git+git://github.com/ianunruh/altocumulus.git
     pip install requests
+    ```
 
 2. Add `cumulus` to the `mechanism_drivers` field in `/etc/neutron/neutron.conf`
 3. Configure `/etc/neutron/plugins/ml2/ml2_cumulus.ini`
@@ -29,7 +31,9 @@ There are two components involved in this project:
 
 1. Install the API server
 
+    ```bash
     pip install git+git://github.com/ianunruh/altocumulus.git
+    ```
 
 2. Place the included Upstart script in `/etc/init` and run `start altocumulus-api`
 
