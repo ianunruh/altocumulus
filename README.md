@@ -1,5 +1,7 @@
 # Altocumulus
 
+**IMPORTANT** This is a proof of concept, it might not even work for your deployment. I'm planning on refactoring this to use the Neutron agent framework as well as Neutron RPC.
+
 Integrate your Cumulus Linux switch with OpenStack Neutron
 
 Manages VLAN bridges on the switch and L2 connectivity between (compute) hosts and the VLAN bridges. Uses LLDP to perform auto-discovery of hosts and the switchports they are connected to.
